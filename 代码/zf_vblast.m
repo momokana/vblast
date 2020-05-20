@@ -3,7 +3,7 @@
 %       H ×ªÒÆ¾ØÕó (n*m)
 % Êä³ö£ºa ¼ì²âÐÅºÅ£¨m*1)
 
-function [a] = vblast(y,H)
+function [a] = zf_vblast(y,H)
 [n,m]=size(H);
 a=zeros(m,1);
 k_list=1:m;
@@ -21,8 +21,3 @@ for i=1:m
     k_list(find(k_list==k))=[];
     k=minnorm(G,k_list);
 end
-
-
-
-
-
